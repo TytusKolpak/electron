@@ -5,7 +5,7 @@ function Hello() {
   const tileAmount = 30;
   const divElements = [];
 
-  for (let i = 1; i <= tileAmount; i = i + 1) {
+  for (let i = 1; i <= tileAmount; i += 1) {
     divElements.push(<div key={i}>Div {i}</div>);
   }
 
