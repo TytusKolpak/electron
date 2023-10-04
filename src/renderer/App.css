@@ -17,6 +17,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: 0;
 }
 
 button {
@@ -26,7 +27,8 @@ button {
   border: none;
   appearance: none;
   font-size: 1.3rem;
-  box-shadow: 0px 8px 28px -6px rgba(24, 39, 75, 0.12),
+  box-shadow:
+    0px 8px 28px -6px rgba(24, 39, 75, 0.12),
     0px 18px 88px -4px rgba(24, 39, 75, 0.14);
   transition: all ease-in 0.1s;
   cursor: pointer;
@@ -59,4 +61,32 @@ a:hover {
   justify-content: center;
   align-items: center;
   margin: 20px 0;
+}
+
+#root{
+  width: calc(100% - 16px);
+  height: calc(100% - 16px);
+}
+.parentBoard {
+  width: 750px;
+  height: 900px;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
+
+#mainField{
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.parentBoard>*{
+  color: black;
+  margin: 2px;
+  background-color: antiquewhite;
+  border-radius: 2px;
 }
