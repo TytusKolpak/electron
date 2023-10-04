@@ -3,7 +3,6 @@ import './App.css';
 import { useState } from 'react';
 
 function Hello() {
-  const [count, setCount] = useState(0);
   const tileAmount = 30;
   const divElements = [];
 
@@ -12,10 +11,8 @@ function Hello() {
   }
 
   return (
-    <div id='mainField'>
-      <div className="parentBoard">
-      {divElements}
-      </div>
+    <div id="mainField">
+      <div className="parentBoard">{divElements}</div>
     </div>
   );
 }
