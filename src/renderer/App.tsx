@@ -1,12 +1,11 @@
 import { MemoryRouter as Router, Routes, Route } from 'react-router-dom';
 import './App.css';
-import { useState } from 'react';
 
 function Hello() {
   const tileAmount = 30;
   const divElements = [];
 
-  for (let i = 1; i <= tileAmount; i++) {
+  for (let i = 1; i <= tileAmount; i = i + 1) {
     divElements.push(<div key={i}>Div {i}</div>);
   }
 
