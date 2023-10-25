@@ -81,6 +81,9 @@ const createWindow = async () => {
     },
   });
 
+  // Make the window fullscreen on startup
+  mainWindow.maximize();
+
   mainWindow.loadURL(resolveHtmlPath('index.html'));
 
   mainWindow.on('ready-to-show', () => {
